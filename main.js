@@ -7,7 +7,7 @@ for (var i = 0; i < b.length; i++){
 if (b[i]==7) {
 sum+=1;
       }
-    }
+              } 
 return sum;
   }
 
