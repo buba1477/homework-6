@@ -12,3 +12,16 @@ return sum;
   }
 
 console.log (getSevenCol([1, 7, 4, 77, 73])); 
+
+
+//Реализовать функцию arrToStr(), которая на вход принимает массив строк, а возвращает строку, которая последовательно поочередно забрала из начала и конца массива все элементы.
+//Пример:
+
+const arrToStr = arr => {
+let res = '';
+while(arr.length){
+res += arr.shift() + (arr.pop()||""); //shift - первый элемент массива pop - последний элемент массива
+}
+return res;
+};
+console.log(arrToStr(["a", "b", "c", "d", "e", "f"])); // "afbecd"
